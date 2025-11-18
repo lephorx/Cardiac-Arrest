@@ -164,14 +164,12 @@ function BattleInterface({
 
       setTimeout(() => {
         handleAttack({
-          playerHealth,
           setPlayerHealth,
           setEnergy,
           setPlayersTurn,
           setPlayerShield,
           playerShield,
           setEnemyDamage,
-          setDecision,
           decision,
           setEnemyStatus,
           setEnemyBuffDuration,
@@ -273,7 +271,6 @@ function BattleInterface({
           energy={energy}
           setEnergy={setEnergy}
           hand={hand}
-          setHand={setHand}
           playerShield={playerShield}
           setPlayerShield={setPlayerShield}
           setStatus={setStatus}

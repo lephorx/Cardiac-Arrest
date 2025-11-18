@@ -77,7 +77,6 @@ function App() {
           ememyHealthMax={enemyHealthMax}
           setEnemyHealthMax={setEnemyHealthMax}
           shuffleArray={shuffleArray}
-          clickablePoints={clickablePoints}
           setClickablePoints={setClickablePoints}
           setScreen={setScreen}
           playerHealth={playerHealth}
