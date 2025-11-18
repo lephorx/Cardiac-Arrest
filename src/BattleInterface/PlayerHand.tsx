@@ -2,7 +2,6 @@ import Card from './Card';
 import { Cards, CardType } from '../cards';
 
 type PlayerHandProps = {
-    setHand: React.Dispatch<React.SetStateAction<Cards[]>>;
     setEnemyHealth: React.Dispatch<React.SetStateAction<number>>;
     setEnergy: React.Dispatch<React.SetStateAction<number>>;
     setPlayerShield: React.Dispatch<React.SetStateAction<number>>;
@@ -26,7 +25,6 @@ function PlayerHand({
     setPlayerShield,
     setEnemyHealth,
     setEnergy,
-    setHand,
     setStatus,
     discardCard,
     drawCards,

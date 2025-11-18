@@ -46,7 +46,6 @@ type BattleInterfaceProps = {
   setBuffActive: Dispatch<SetStateAction<boolean>>;
   buffDuration: number;
   setBuffDuration: Dispatch<SetStateAction<number>>;
-  clickablePoints: ClickablePoints;
   setClickablePoints: Dispatch<SetStateAction<ClickablePoints>>;
   wins: number;
   setWins: Dispatch<SetStateAction<number>>;
@@ -68,7 +67,6 @@ function BattleInterface({
   ememyHealthMax,
   setEnemyHealthMax,
   shuffleArray,
-  clickablePoints,
   setClickablePoints,
   setScreen,
   playerHealth,
@@ -102,7 +100,7 @@ function BattleInterface({
   decision,
   setDecision,
 }: BattleInterfaceProps) {
-  const [currentEnemyIndex, setCurrentEnemyIndex] = useState(wins);
+  const [currentEnemyIndex] = useState(wins);
 
   function drawCards(amount: number, append: boolean = false) {
     let newDeck = [...deck];

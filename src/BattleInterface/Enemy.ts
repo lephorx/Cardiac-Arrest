@@ -138,7 +138,6 @@ export function initializeEnemy(
 }
 
 type HandleAttackProps = {
-  playerHealth: number;
   setPlayerHealth: React.Dispatch<React.SetStateAction<number>>;
   setEnergy: React.Dispatch<React.SetStateAction<number>>;
   setPlayersTurn: React.Dispatch<React.SetStateAction<boolean>>;
@@ -146,7 +145,6 @@ type HandleAttackProps = {
   playerShield: number;
   setEnemyDamage: React.Dispatch<React.SetStateAction<number>>;
   decision: number;
-  setDecision: React.Dispatch<React.SetStateAction<number>>;
   setEnemyStatus: React.Dispatch<React.SetStateAction<string>>;
   setEnemyBuffDuration: React.Dispatch<React.SetStateAction<number>>;
   currentEnemyIndex: number;
@@ -154,14 +152,12 @@ type HandleAttackProps = {
 };
 
 export function handleAttack({
-  playerHealth,
   setPlayerHealth,
   setEnergy,
   setPlayersTurn,
   setPlayerShield,
   playerShield,
   setEnemyDamage,
-  setDecision,
   decision,
   setEnemyStatus,
   setEnemyBuffDuration,

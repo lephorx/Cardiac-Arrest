@@ -1,4 +1,4 @@
-import { useState, Dispatch, SetStateAction } from 'react';
+import { useState } from 'react';
 
 import BattleInterface from './BattleInterface/BattleInterface';
 import MapInterface from './UI/MapInterface';
@@ -6,7 +6,6 @@ import StartMenu from './UI/StartMenu';
 import CreditsPage from './UI/CreditsPage';
 import VictoryScreen from './UI/VictoryScreen';
 import LoseScreen from './UI/LoseScreen';
-import EnemyTurn from './BattleInterface/EnemyTurn';
 import VictoryScreenFinal from './UI/VictoryScreenFinal';
 
 import { Cards, createStartingDeck } from './cards';
@@ -47,7 +46,6 @@ function App() {
   const [enemyStatus, setEnemyStatus] = useState<string>("");
   const [enemyBuffDuration, setEnemyBuffDuration] = useState<number>(0);
   const [enemyHealthMax, setEnemyHealthMax] = useState<number>(0);
-  const [currentEnemy, setCurrentEnemy] = useState<number>(0);
   const [wins, setWins] = useState<number>(0);
   
   function handleStartBattle() {

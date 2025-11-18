@@ -29,10 +29,6 @@ function MapInterface({ onEnemyClick, clickablePoints }: MapInterfaceProps) {
         }
     };
 
-    const getEnemyOpacity = (id: keyof typeof clickablePoints) => {
-        return clickablePoints[id] ? '1' : '0.5';
-    };
-
     const renderEnemy = (id: keyof typeof points) => {
         const { x, y } = points[id];
         const isClickable = clickablePoints[id as keyof typeof clickablePoints];

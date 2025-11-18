@@ -184,7 +184,7 @@ const cards: Cards[] = [
     "Deal 14 damage +50% strength",
     [CardType.Attack],
     {
-      attack: (enemyHealth, buffAmount, playerShield, buffDuration) => 
+      attack: (enemyHealth, buffAmount, _playerShield, buffDuration) => 
         enemyHealth - Math.ceil(14 + 14 * (buffAmount + 0.5 * buffDuration))
     }
   ),
